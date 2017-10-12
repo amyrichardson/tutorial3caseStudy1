@@ -37,17 +37,19 @@ header, ul, nav, li, a {
 
 
 /* Row Styles */
+
+
 .row::after {
   clear: both;
   content: "";
   display: table;
 }
-
+/*fixes container collapse*/
 
 
 
 /* Page Header Styles */
-header img {
+header>img {
   display: block;
   width: 70%;
   float: left;
@@ -60,22 +62,18 @@ header nav {
   width: 30%;
 }
 
-header nav a {
+header nav ul a {
   display: block;
   width: 100%;
 }
 
 
-
-
-
 /* Horizontal Navigation List Styles */
-nav.horizontal ul li {
+nav.horizontal li {
   display: block;
   width: 12.5%;
   float: left;
 }
-
 
 
 /* Topics Styles */
@@ -87,11 +85,11 @@ ul#topics li {
   margin-right: 1.5%;
 }
 
-ul#topics li:nth-of-type(1) {
+ul#topics li:first-of-type {
   margin-left: 7.75%;
 }
 
-ul#topics li:last-child {
+ul#topics li:last-of-type {
   margin-right: 7.75%;
 }
 
@@ -103,28 +101,26 @@ ul#topics li img {
 }
 
 
-
 /* HR Styles */
 hr {
   width: 50%;
 }
 
 
-
 /* Customer Comment Styles */
-ul#comments {
+#comments {
   width: 75%;
-  margin: 40px auto 40px auto;
+  margin: 40px auto;
 }
 
-ul#comments li {
+#comments li {
   display: block;
   width: 50%;
   float: left;
   margin-bottom: 30px;
 }
 
-ul#comments li img {
+#comments li img {
   display: block;
   width: 20%;
   float: left;
@@ -132,7 +128,7 @@ ul#comments li img {
   margin-right: 5%;
 }
 
-ul#comment li p {
+#comments li p {
   float: left;
   width: 70%;
 }
